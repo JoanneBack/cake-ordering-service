@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="02-shape">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="govuk-form-group">
+      <div class="govuk-form-group">
+       <fieldset class="govuk-fieldset">
+         <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+           <h1 class="govuk-fieldset__heading">
+             How many servings do you need?
+           </h1>
+         </legend>
+         <div class="govuk-radios">
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="up-to-10" name="servings" type="radio" value="up-to-10">
+             <label class="govuk-label govuk-radios__label" for="up-to-10">
+               Up to 10    - one tier
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="up-to-30" name="servings" type="radio" value="up-to-30">
+             <label class="govuk-label govuk-radios__label" for="up-to-30">
+               Up to 30    - two tiers
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="up-to-60" name="servings" type="radio" value="up-to-60">
+             <label class="govuk-label govuk-radios__label" for="up-to-60">
+               Up to 60     - three tiers
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="up-to-100" name="servings" type="radio" value="up-to-100">
+             <label class="govuk-label govuk-radios__label" for="up-to-100">
+               Up to 100   - four tiers
+             </label>
+           </div>
+         </div>
+
+       </div>
+     </fieldset>
+   </div>
+   <button class="govuk-button">Continue</button>
+
+ </form>
+       </fieldset>
+     </div>
+    </div>
+  </div>
+
+{% endblock %}
